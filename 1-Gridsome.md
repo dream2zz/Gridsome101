@@ -96,11 +96,12 @@ gridsome develop #在以下位置启动本地开发服务器 http://localhost:80
 
 ```
 git clone https://github.com/drehimself/gridsome-portfolio-starter
-npm config set sharp_dist_base_url https://npm.taobao.org/mirrors/sharp-libvips/v8.9.1/
+npm config set sharp_binary_host https://npm.taobao.org/mirrors/sharp
+npm config set sharp_libvips_binary_host https://npm.taobao.org/mirrors/sharp-libvips
 npm i --registry=https://registry.npm.taobao.org
-
 ```
 
+> https://sharp.pixelplumbing.com/install#chinese-mirror
 
 
 # 4. 目录结构
