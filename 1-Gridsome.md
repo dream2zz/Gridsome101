@@ -79,6 +79,14 @@ Gridsome站点在转换成一个完全由Vue.js支持的SPA之前作为静态HTM
 
 Gridsome需要Node.js（v8.3 +）。
 
+修改hosts : https://github.com/googlehosts/hosts/blob/master/hosts-files/hosts
+```
+npm config set sharp_binary_host https://npm.taobao.org/mirrors/sharp
+npm config set sharp_libvips_binary_host https://npm.taobao.org/mirrors/sharp-libvips
+```
+
+> https://sharp.pixelplumbing.com/install#chinese-mirror
+
 ## 3.2. 安装Gridsome CLI工具
 
 ```
@@ -96,13 +104,8 @@ gridsome develop #在以下位置启动本地开发服务器 http://localhost:80
 
 ```
 git clone https://github.com/drehimself/gridsome-portfolio-starter
-npm config set sharp_binary_host https://npm.taobao.org/mirrors/sharp
-npm config set sharp_libvips_binary_host https://npm.taobao.org/mirrors/sharp-libvips
 npm i --registry=https://registry.npm.taobao.org
 ```
-
-> https://sharp.pixelplumbing.com/install#chinese-mirror
-
 
 # 4. 目录结构
 
